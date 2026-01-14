@@ -58,7 +58,7 @@ public class DemoApp extends App {
                 .css("app-footer");
     }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         launch(args);
     }
 }
