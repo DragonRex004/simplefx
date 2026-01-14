@@ -1,4 +1,4 @@
-package de.dragonrex.simplefx.core;
+package de.dragonrex.simplefx.core.node;
 
 import javafx.scene.Node;
 

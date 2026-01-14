@@ -1,4 +1,9 @@
 package de.dragonrex.simplefx.demo.views;
 
-public class DemoView {
+import de.dragonrex.simplefx.core.node.FXNode;
+
+public interface DemoView {
+    String title();
+    FXNode view();
 }
+

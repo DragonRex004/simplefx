@@ -1,4 +1,19 @@
-﻿package de.dragonrex.simplefx.controls;
+package de.dragonrex.simplefx.controls;
 
-public class TextField {
+import de.dragonrex.simplefx.core.state.State;
+import de.dragonrex.simplefx.core.FX;
+
+public class TextField extends FX<javafx.scene.control.TextField> {
+
+    public TextField(State<String> state) {
+        super(new javafx.scene.control.TextField());
+
+        state.onChange(s -> {
+            if (!node.getText().equals(s)) {
+                node.setText(s);
+            }
+        });
+
+        node.textProperty().addListener((_, _, v) -> state.set(v));
+    }
 }

@@ -1,4 +1,13 @@
 package de.dragonrex.simplefx.layout;
 
-public class Center {
+import de.dragonrex.simplefx.core.layout.FXContainer;
+import de.dragonrex.simplefx.core.node.FXNode;
+import javafx.scene.layout.StackPane;
+
+public class Center extends FXContainer<StackPane> {
+
+    public Center(FXNode... children) {
+        super(new javafx.scene.layout.StackPane(), children);
+        css("fx-center");
+    }
 }
