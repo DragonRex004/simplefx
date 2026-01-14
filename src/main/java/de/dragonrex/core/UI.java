@@ -2,11 +2,9 @@ package de.dragonrex.core;
 
 import de.dragonrex.controls.*;
 import de.dragonrex.layout.*;
-import de.dragonrex.simplefx.controls.*;
 import de.dragonrex.core.node.FXNode;
 import de.dragonrex.core.state.State;
 import de.dragonrex.core.view.ViewSlot;
-import de.dragonrex.simplefx.layout.*;
 import javafx.scene.Node;
 
 import java.util.Arrays;
